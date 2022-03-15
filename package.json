@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stats-vartest",
-  "version": "0.0.7",
+  "version": "0.0.0",
   "description": "Two-sample F-test for equal variances",
   "license": "Apache-2.0",
   "author": {
@@ -53,6 +53,7 @@
     "@stdlib/stats-base-dists-f-cdf": "^0.0.x",
     "@stdlib/stats-base-dists-f-quantile": "^0.0.x",
     "@stdlib/stats-base-variance": "^0.0.x",
+    "@stdlib/string-format": "^0.0.x",
     "@stdlib/types": "^0.0.x",
     "@stdlib/utils-define-read-only-property": "^0.0.x"
   },
