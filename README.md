@@ -31,7 +31,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import vartest from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-vartest@esm/index.mjs';
+import vartest from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-vartest@v0.0.9-esm/index.mjs';
 ```
 
 #### vartest( x, y\[, opts] )
@@ -203,7 +203,7 @@ var table = out.print();
 <script type="module">
 
 import rnorm from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-normal@esm/index.mjs';
-import vartest from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-vartest@esm/index.mjs';
+import vartest from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-vartest@v0.0.9-esm/index.mjs';
 
 var table;
 var out;
