@@ -24,38 +24,30 @@ limitations under the License.
 
 > Two-sample F-test for equal variances.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-vartest
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-vartest = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-vartest@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var vartest = require( 'path/to/vendor/umd/stats-vartest/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-vartest@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.vartest;
-})();
-</script>
+var vartest = require( '@stdlib/stats-vartest' );
 ```
 
 #### vartest( x, y\[, opts] )
@@ -220,14 +212,9 @@ var table = out.print();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-normal@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-vartest@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var rnorm = require( '@stdlib/random-base-normal' );
+var vartest = require( '@stdlib/stats-vartest' );
 
 var table;
 var out;
@@ -279,11 +266,6 @@ table = out.print();
 
     Test Decision: Fail to reject null in favor of alternative at 5% significance level
 */
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -343,8 +325,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/stats-vartest.svg
 [npm-url]: https://npmjs.org/package/@stdlib/stats-vartest
 
-[test-image]: https://github.com/stdlib-js/stats-vartest/actions/workflows/test.yml/badge.svg?branch=v0.0.9
-[test-url]: https://github.com/stdlib-js/stats-vartest/actions/workflows/test.yml?query=branch:v0.0.9
+[test-image]: https://github.com/stdlib-js/stats-vartest/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/stats-vartest/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-vartest/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-vartest?branch=main
@@ -379,7 +361,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/bartlett-test]: https://github.com/stdlib-js/stats-bartlett-test/tree/umd
+[@stdlib/stats/bartlett-test]: https://github.com/stdlib-js/stats-bartlett-test
 
 <!-- </related-links> -->
 
