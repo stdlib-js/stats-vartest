@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import vartest from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-vartest@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-vartest/tags). For example,
+
+```javascript
 import vartest from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-vartest@v0.2.3-esm/index.mjs';
 ```
 
@@ -214,7 +219,7 @@ var table = out.print();
 <script type="module">
 
 import rnorm from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-normal@esm/index.mjs';
-import vartest from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-vartest@v0.2.3-esm/index.mjs';
+import vartest from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-vartest@esm/index.mjs';
 
 var table;
 var out;
